@@ -1,0 +1,46 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.group {
+	font-size: larger;
+}
+
+.label, .group {
+	font-weight: 700;
+	color: #0E498E;
+	margin-bottom: .5rem;
+	display: flex;
+	align-items: center;
+}
+
+.label:not(.twoColumns .label) {
+	padding-top: 15px;
+}
+
+.emptySpace {
+	min-height: 150px;
+}
+
+.required {
+	color: red;
+}
+
+.spanTwoColumns {
+	grid-column: span 2;
+}
+
+.twoColumns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	min-width: 600px;
+}
+
+.errorText, .smallErrorText {
+	color: #E10000;
+	font-weight: bold;
+	margin: 0 0 0.5rem;
+	max-width: 400px;
+}
+
+.smallErrorText {
+	font-size: 0.8em;
+}

@@ -1,0 +1,47 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.loading {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../images/hourglass.gif") 50% 50% no-repeat rgb(255, 255, 255);
+	opacity: .8;
+	font-size: 13px;
+}
+
+.loading p {
+	margin-top: 110px;
+	width: 100%;
+	text-align: center;
+}
+
+.errorHeader {
+	font-weight: bold;
+	color: #FF6C00;
+	font-size: larger;
+}
+
+.errorText {
+	color: #0E498E;
+}
+
+.errorContainer {
+	display: flex;
+}
+
+.errorContent {
+	flex: 1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.errorImage {
+	flex: 1;
+}
+
+.errorImage img {
+	width: 100%;
+}

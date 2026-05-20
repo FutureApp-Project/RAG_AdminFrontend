@@ -1,0 +1,102 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.popup {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	width: auto;
+	min-width: 400px;
+	max-width: 75%;
+	height: auto;
+	max-height: 95%;
+	display: flex;
+	flex-direction: column;
+}
+
+.popupHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.popupTitle {
+	color: #0E498E;
+	font-size: 32px;
+	font-weight: bold;
+	margin: -.3rem 0 0;
+	line-height: 2rem;
+}
+
+.closeButton {
+	background: transparent;
+	border: 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #000;
+	opacity: .5;
+	padding: 1rem;
+	line-height: 1;
+}
+
+.closeButton:hover {
+	opacity: .75;
+}
+
+.popupContent {
+	height: 90%;
+	overflow-y: auto;
+}
+
+.popupFormGrid {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.firstButton, .secondButton {
+	margin: 20px 0;
+	padding: 0.5rem 1rem;
+	min-width: 110px;
+}
+
+.okButton {
+	border: 0;
+	background: #62CB31;
+	color: #FFF;
+}
+
+.okButton:hover {
+	background: #58B62C;
+}
+
+.cancelButton {
+	border: 1px solid #0080ab;
+	background: white;
+	color: #0080AB;
+}
+
+.cancelButton:hover {
+	background: #E9ECEF;
+}
+
+.firstButton {
+	float: left;
+}
+
+.secondButton {
+	float: right;
+}

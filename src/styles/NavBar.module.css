@@ -1,0 +1,64 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.dashboardNavList {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background: #FFF;
+}
+
+.dashboardNavItem {
+	display: flex;
+	align-items: center;
+	transition: background var(--transition-speed) ease, padding var(--transition-speed) ease;
+	cursor: pointer;
+	position: relative;
+	font-size: 1rem;
+	flex-direction: column;
+}
+
+.dashboardNavItem span {
+	display: inline;
+	transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+	white-space: nowrap;
+	color: var(--main-accent-color);
+}
+
+.dashboardNavItem:hover::after {
+	opacity: 1;
+}
+
+.dashboardNavItemActive {
+	background: #DDE7F1;
+}
+
+.navIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	margin: -9px 0;
+	transition: margin-right var(--transition-speed) ease;
+}
+
+.dashboardNavList a .navIcon {
+	margin-right: 0;
+}
+
+.dashboardNavList a .navIcon i {
+	font-size: 1.25rem;
+}
+
+.navCompact .dashboardNavItem {
+	justify-content: center;
+	padding: 8px 10px;
+}
+
+.navCompact .dashboardNavItem span {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.navCompact .dashboardNavItem:hover::after {
+	opacity: 1;
+}

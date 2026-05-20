@@ -1,0 +1,124 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+:root {
+	--font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
+	"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+	"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+	--sidebar-width: 250px;
+	--sidebar-compact-width: 80px;
+	--transition-speed: 0.3s;
+
+	--main-accent-color: #0080AB;
+	--sidebar-bg-color: #FFF;
+	--sidebar-text-color: #0080AB;
+	--sidebar-hover-bg: #EAF5F8;
+
+	--shadow-color: RGBA(0, 0, 0, 0.2);
+
+	--body-bg: #F1F3F5;
+	--text-color: #212529;
+
+	--header-bg: #0080AB;
+	--header-text-color: #FFF;
+
+	--footer-bg-color: #0080AB;
+	--footer-text-color: #FFF;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-family-sans-serif);
+	line-height: 1.15;
+	text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	height: 100%;
+	user-select: none;
+}
+
+body {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--text-color);
+	text-align: left;
+	background-color: var(--body-bg);
+	overflow-x: hidden;
+	height: 100%;
+}
+
+#root {
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+a, a:hover {
+	color: var(--main-accent-color);
+	text-decoration: none;
+	background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Nunito", sans-serif;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: normal;
+	color: var(--main-accent-color);
+}
+
+button, input[type=submit] {
+	border: 1px solid transparent;
+	border-radius: .25em;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	padding: .375rem .75rem;
+}
+
+.canvasjs-chart-credit {
+	display: none;
+}
+
+input[type=submit]:not(:disabled), button:not(:disabled) {
+	cursor: pointer;
+}
+
+dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: .5rem;
+	margin-left: 0;
+}
+
+.recharts-legend-item {
+	display: inline-flex !important;
+	align-items: center;
+	gap: 4px;
+}

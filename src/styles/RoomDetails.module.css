@@ -1,0 +1,30 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.row {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	color: #0E498E;
+}
+
+.colHalf {
+	flex: 1;
+}
+
+.spacer {
+	margin-top: 1rem;
+}
+
+.buttonDetails {
+	background: aliceblue;
+	border: 1px solid #0E498E;
+	padding: 9px;
+	border-radius: 11px;
+	width: 123px;
+	color: #0E498E;
+	box-sizing: border-box;
+	font-weight: bolder;
+}
+
+.absenceAlarmTime {
+	font-size: inherit;
+}

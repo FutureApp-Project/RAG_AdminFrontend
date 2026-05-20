@@ -1,0 +1,10 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.pageTitle {
+	margin-top: 15px;
+	font-size: 45px;
+	text-align: center;
+	color: #0E498E;
+	font-weight: bold;
+	word-wrap: break-word;
+	hyphens: auto;
+}

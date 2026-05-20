@@ -1,0 +1,14 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.detailsTable {
+	min-width: 410px;
+	color: #0E498E;
+}
+
+.detailsTable td, .detailsTable th {
+	padding: 12px;
+	border-bottom: 1px solid #DDD;
+}
+
+.detailsTable th {
+	font-weight: bold;
+}

@@ -1,0 +1,10 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.error404WithoutLogin {
+	padding: 10px;
+	color: #0080AB;
+}
+
+.error404WithoutLogin, .error404 {
+	font-size: 38px;
+	font-weight: bold;
+}

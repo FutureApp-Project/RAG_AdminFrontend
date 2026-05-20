@@ -1,0 +1,13 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.buttonCreate {
+	display: table;
+	align-items: end;
+	margin-left: auto;
+	padding: 10px;
+	
+	border: none;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	font-size: 14px;
+}

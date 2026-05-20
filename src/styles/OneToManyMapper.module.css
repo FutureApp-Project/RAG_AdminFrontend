@@ -1,0 +1,19 @@
+.addRow {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.mappingRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 4px 0;
+}
+
+.entryLabel {
+	min-width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

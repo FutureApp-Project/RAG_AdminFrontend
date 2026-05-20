@@ -1,0 +1,9 @@
+/* Copyright (C) 2024, FutureApp Solutions GmbH. Alle Rechte vorbehalten. */
+.faqPage {
+	padding: 20px;
+}
+
+.faqPage li, .faqPage a {
+	color: #FF6300CF;
+	font-weight: 500;
+}
