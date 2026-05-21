@@ -105,7 +105,7 @@ export default function Users() {
 			{
 				propertyKey: "password", 
 				label: "Passwort", 
-				required: !userDetails.id ? true : undefined,
+				required: true,
 				type: "password", 
 				maxLength: 255, 
 				watch: true,
@@ -113,7 +113,7 @@ export default function Users() {
 			{
 				propertyKey: "repeatPassword", 
 				label: "Passwort wiederholen", 
-				required: !userDetails.id ? true : undefined,
+				required: true,
 				type: "password", 
 				maxLength: 255,
 				validate: (value, watched) => {

@@ -612,7 +612,17 @@ export default function PopupForm<T extends object>(
 													<Controller
 														name={field.propertyKey as unknown as Path<T>}
 														control={form.control}
-														rules={{validate: v => field.required && !v ? `Bitte ${field.label} auswählen.` : true}}
+														rules={{
+															validate: (value) => {
+																if (!field.required) {
+																	return true;
+																}
+
+																return value !== undefined && value !== null && String(value) !== "" && String(value) !== "0"
+																	? true
+																	: `Bitte ${field.label} auswählen.`;
+															}
+														}}
 														render={({ field: ctrl }) => (
 															<FormControl
 																fullWidth
