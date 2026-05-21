@@ -39,7 +39,8 @@ export default function Upload() {
 			const formData = new FormData();
 			formData.append("file", file);
 			const xhr = new XMLHttpRequest();
-			xhr.open("POST", config.BASE_URL + "upload/pdf");
+			const baseUrl = config.BASE_URL.replace(/\/+$/, "");
+			xhr.open("POST", `${baseUrl}/upload/pdf`);
 			xhr.setRequestHeader("Authorization", `Bearer ${token}`);
 			xhr.upload.onprogress = (event) => {
 				if (event.lengthComputable) {
@@ -54,7 +55,14 @@ export default function Upload() {
 					setProgress(100);
 					setTimeout(() => navigate(-1), 1500);
 				} else {
-					setError(`Fehler beim Hochladen: ${xhr.statusText || xhr.responseText}`);
+					let backendMessage = xhr.responseText;
+					try {
+						const parsed = JSON.parse(xhr.responseText);
+						backendMessage = parsed?.detail || parsed?.message || xhr.statusText || xhr.responseText;
+					} catch {
+						backendMessage = xhr.statusText || xhr.responseText;
+					}
+					setError(`Fehler beim Hochladen: ${backendMessage}`);
 				}
 			};
 			xhr.onerror = () => {
